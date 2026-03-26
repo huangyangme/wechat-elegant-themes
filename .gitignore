@@ -1,0 +1,26 @@
+# ======= macOS 系统的“垃圾”文件 =======
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# ======= 缩略图与元数据 =======
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# ======= 编辑器缓存 (如果你用 Cursor/VS Code) =======
+.vscode/
+.idea/
+*.swp
+*~
+
+# ======= Ulysses 或 iA Writer 产生的临时文件 =======
+# 如果你在包内容里编辑，可能会产生临时交换文件
+*.bak
+*.tmp
