@@ -7,8 +7,8 @@
 ### Typora
 
 1. 打开 Typora 偏好设置 -> 外观 -> 打开主题文件夹（在 macOS 中一般是 `~/Library/Application Support/abnerworks.Typora/themes`）。
-2. 将主题文件 [hyme-typora.css](hyme-typora.css) 放入该文件夹。
-3. 重启 Typora，在菜单栏「主题」中选择 `Hyme Typora`即可使用主题。
+2. 将主题文件 [hyme.css](hyme.css) 放入该文件夹。
+3. 重启 Typora，在菜单栏「主题」中选择 `Hyme`即可使用主题。
 
 ![使用主题](assets/typora.jpg)
 
@@ -28,8 +28,8 @@
 
 ### Ulysses
 
-  1. 双击 [hyme-ulysses.ulstyle](hyme-ulysses.ulstyle) 即可完成安装。
-  2. 进入 Ulysses 导出视图，类型选 HTML，样式选`hyme-ulysses`。
+  1. 双击 [hyme.ulstyle](hyme.ulstyle) 即可完成安装。
+  2. 进入 Ulysses 导出视图，类型选 HTML，样式选`hyme`。
 
 ![使用主题](assets/ulysses.jpg)
 

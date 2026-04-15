@@ -3,22 +3,29 @@
  */
 
 :root {
-    --text-color: #3f3f3f;       /* 正文色值 */
-    --heading-color: #222222;    /* 标题略深，增加层级 */
+    --text-color: #222222;       /* 正文色值 */
+    --heading-color: #000000;    /* 标题黑色，增加层级 */
     --em-bg-color: #fff2a8;      /* 黄色高亮背景 (类似 Mark) */
+    --sans-font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC",
+        "Source Han Sans SC", Arial, sans-serif;
 }
 
 /* 基础设置 */
 html {
-    font-size: 16px;             /* 正文 16px 字号 */
+    font-size: 17px;             /* 正文 17px 字号 */
 }
 
 body {
     max-width: 677px;            /* 模拟微信公众号文章标准宽度 */
     margin: 0 auto;
-    font-family: Optima, "PingFang SC", Georgia, serif;
+    font-family: var(--sans-font-family);
+    font-size: 1rem;
+    font-weight: 400;
     color: var(--text-color);
-    line-height: 1.75;
+    line-height: 1.8;
+    letter-spacing: 0;
+    text-align: left;
 
     /* 核心：防止英文单词因过长而在行末留下巨大空白 */
     word-break: break-word;
@@ -59,13 +66,10 @@ h3 {
 }
 
 p {
-    font-size: 1em;
-    font-family: Optima, PingFangSC-light, "PingFang SC", Georgia, serif;;
     color: var(--text-color);
-    line-height: 1.75;
-
-    /* 保持左对齐 */
-    text-align: left;
+    margin-bottom: 1.5em;
+    line-height: 1.95;
+    font-weight: 300;
 
     /* 开启连字符，在行尾自动添加 - 符号 */
     -webkit-hyphens: auto;
@@ -89,7 +93,6 @@ em {
 /* 强调文字 */
 strong {
     color: #000;
-    font-family: Optima, "PingFang SC", Georgia, serif;
     font-weight: bold;
 }
 
@@ -129,7 +132,7 @@ code {
     color: #e83e8c; /* 增加一点代码辨识度 */
 }
 
-pre {
+pro, pre.typora-export-show {
     background-color: #f6f8fa;
     padding: 15px;
     border-radius: 5px;
@@ -148,7 +151,7 @@ hr {
 /* 图片适配 */
 img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 1em;
     max-width: 100%;
     border-radius: 6px;
 }
@@ -165,5 +168,4 @@ img + small {
     font-size: 0.8em;
     letter-spacing: 0.05em;
     margin-top: 6px;
-    font-family: Optima, PingFangSC-light, "PingFang SC", Georgia, serif;
 }
